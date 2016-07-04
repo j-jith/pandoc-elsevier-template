@@ -37,5 +37,8 @@ block](http://pandoc.org/README.html#extension-yaml_metadata_block). These optio
 
 A sample markdown file called `paper1.md` has been provided as an example for how to use the options.
 
+Extra packages that you need to add, new command definitions, and other LaTeX specific things can be
+specified in the `custom-header.sty` file.
+
 This template does not cover all the features of the `elsarticle` class. More features can be added
 upon request.
