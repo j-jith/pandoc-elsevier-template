@@ -1,0 +1,58 @@
+\documentclass[3p]{elsarticle/elsarticle}
+
+
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage{hyperref} % provides \hypertarget
+
+% bibliography
+\usepackage{natbib}
+\bibliographystyle{elsarticle/elsarticle-num}
+
+\usepackage{custom-header}
+
+
+%
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Super Amazing Title}
+
+
+
+\author[Group1]{First Author}
+
+\ead{first.author@some-univers.ity}
+
+
+\author[Group2]{Second Author\corref{cor1}}
+
+\ead{second.author\#some-univers.ity}
+
+
+\address[Group1]{Department of this thing, some university, some country}
+\address[Group2]{Department of that thing, some university, some country}
+
+
+\cortext[cor1]{Corresponding author}
+
+\begin{abstract}
+Your abstract goes here
+\end{abstract}
+
+\begin{keyword}
+
+\end{keyword}
+
+\end{frontmatter}
+
+
+\section{Body of the paper}\label{body-of-the-paper}
+
+Write the body of the paper here. With \texttt{pandoc-citeproc} you can cite like
+this\citep{jith_crossing_2013}.
+
+\renewcommand\refname{References}
+\bibliography{refs.bib}
+
+\end{document}
