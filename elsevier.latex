@@ -2,7 +2,8 @@
 
 
 \usepackage{fixltx2e} % provides \textsubscript
-\usepackage{hyperref} % provides \hypertarget
+\usepackage[unicode=true]{hyperref} % provides \hypertarget
+\usepackage{graphicx}
 
 % bibliography
 $if(natbib)$
@@ -19,6 +20,8 @@ $endif$
 
 \usepackage{custom-header}
 
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 %$for(header-includes)$
 %$header-includes$
